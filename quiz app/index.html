@@ -8,17 +8,23 @@
 </head>
 <body>
     <center><h1>Quiz App </h1></center>
-        <input readonly id="quetions">
+       <div id="question"></div>
+       <h2 id="score">Score : 0 </h2>
     
     <div id="btns">
-         <button id="btn1">option 1</button>
-         <button id="btn2">option 2</button>
-         <button id="btn3">option 3</button>
-         <button id="btn4">option 4</button>
+         <button id="btn1" onclick="checkAnswer(this)">option 1</button>
+         <button id="btn2" onclick="checkAnswer(this)">option 2</button>
+         <button id="btn3" onclick="checkAnswer(this)">option 3</button>
+         <button id="btn4" onclick="checkAnswer(this)">option 4</button>
     </div>
 
-      <button>Next Quetion</button>
+      <button id="btn5" onclick="nextQuestion()">Next Quetion</button>
     
     <script src="main.js"></script>
+
+    <section>
+        <h1> Quiz Finished!! </h1>
+        <h3> Final Score : 0 / 5</h3>
+    </section>
 </body>
 </html>
